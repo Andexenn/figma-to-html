@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
+
 html {
   /* quy doi 1 rem = 10px */
   font-size: 62.5%;
@@ -38,8 +43,12 @@ a {
   font-size: 1.6rem;
   text-align: center;
   background-color: #171100;
-  border-radius: 2.65rem;
+  border-radius: 999px;
   line-height: 5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* ------------header--------------- */
@@ -49,15 +58,16 @@ a {
   align-items: center;
   padding: 3.6rem 0 0.8rem;
 }
-.header{
-  background-color: #FFFCF4;
+.header {
+  background-color: #fffcf4;
 }
 .nav {
   margin-left: auto;
 }
-.header.fixed{
-  position:sticky;
+.header.fixed {
+  position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .nav ul {
   display: flex;
@@ -92,16 +102,179 @@ a {
   content: "";
   width: 1.2rem;
   height: 0.2rem;
-  border-radius: 1px;
+  border-radius: 0.1rem;
   background: #171100;
 }
 
-header .btn-sign-up{
+header .btn-sign-up {
   min-width: 14.4rem;
 }
 
-.header .action{
-  margin-left: 49px;
+.header .action {
+  margin-left: 4.9rem;
 }
 
+/* ------------hero--------------- */
 
+.hero {
+  /* margin-top: 5.6rem; */
+  /* su dung padding vi padding co the doi mau cua no luon thay vi margin ko lam duoc */
+  padding: 5.6rem 0 6.5rem;
+  background: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+/* -----------------hero left----------------- */
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+/* thao tac giup cho anh khi thay doi se khong lam bi vo giao dien */
+.hero .media-block .img {
+  width: 47rem;
+  height: 68.5rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.hero .hero-summary {
+  padding: 24px;
+  width: 270px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9e8;
+}
+
+.hero-summary .icon2 {
+  background-color: #fcefff;
+}
+
+.hero-summary .icon3 {
+  background-color: #ebeaff;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero-summary .lable {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.hero-summary .title {
+  color: #171100;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+/* hero right */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.hero .desc {
+  margin-top: 22px;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero-cta {
+  min-width: 180px;
+  background-color: var(--primary-color);
+  line-height: 64px;
+}
+
+.hero .watch-video {
+  margin-left: 28px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  margin-left: 28px;
+  align-items: center;
+  cursor:pointer;
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px #00000012;
+}
+.hero .cta-group span {
+  margin-left: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.hero .desc-recent{
+  margin-top: 48px;
+
+}
+
+.hero .stats strong{
+  margin-right: 15px;
+  color:#171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;  
+}
+
+.hero .stats strong:nth-child(2){
+  margin-left: 28px;
+}
+
+.hero .stats{
+  margin-top: 8px;
+}
