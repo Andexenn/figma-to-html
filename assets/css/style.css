@@ -51,6 +51,15 @@ a {
   opacity: 0.9;
 }
 
+.heading-lv2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.27;
+  letter-spacing: -0.76%;
+  color: #171100;
+}
+
 /* ------------header--------------- */
 
 .header .body {
@@ -237,7 +246,7 @@ header .btn-sign-up {
   display: flex;
   margin-left: 28px;
   align-items: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .hero .watch-video .icon {
@@ -257,24 +266,72 @@ header .btn-sign-up {
   line-height: 1.67;
 }
 
-.hero .desc-recent{
+.hero .desc-recent {
   margin-top: 48px;
-
 }
 
-.hero .stats strong{
+.hero .stats strong {
   margin-right: 15px;
-  color:#171100;
+  color: #171100;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 4.4rem;
-  line-height: 1.23;  
+  line-height: 1.23;
 }
 
-.hero .stats strong:nth-child(2){
+.hero .stats strong:nth-child(2) {
   margin-left: 28px;
 }
 
-.hero .stats{
+.hero .stats {
   margin-top: 8px;
 }
+
+/* -----------popular------------- */
+
+.popular {
+  /* them san padding vao de de thay mau sau nay */
+  padding: 65px 0;
+  /* background-color: blue; */
+  margin-top: 135px;
+}
+
+.popular-top .desc {
+  font-family: Poppins;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5F5B53;
+  margin-top: 16px;
+  width: 458px;
+}
+
+.popular-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-top .controls{
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn{
+  /* cai dat cai nay cho anh thi se chi thay cai phan noi nhat */
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* co the copy code cua file svg va sau do vao svg de chinh sua  */
+  color: var(--primary-color);
+}
+.popular-top .control-btn:hover{
+  background-color: var(--primary-color);
+  color:#fff;
+}
+
+
+
