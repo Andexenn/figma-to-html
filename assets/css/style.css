@@ -60,6 +60,22 @@ a {
   letter-spacing: -0.76%;
   color: #171100;
 }
+/* de dau 3 cham khi noi dung qua dai */
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow:hidden;
+}
+/* de dau 3 cham khi nd qua dai va qua 2 dong */
+.line-clamp.line-2{
+  --line-clamp:2;
+}
+/* de be nhung chu ma qua dai hoac la 1 cai link lm vo giao dien */
+.break-all{
+  word-break: break-all;
+}
+
 
 /* ------------header--------------- */
 
@@ -341,6 +357,8 @@ header .btn-sign-up {
 }
 
 .popular .course-item {
+  /* flex de giu cho 3 cot du thay doi co nao van bang nhau, van ko bi be dinh dang  */
+  flex: 1;
   border: 1px solid #E2DFDA;
   border-radius: 12px;
   background: #fff;
